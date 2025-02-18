@@ -23,7 +23,7 @@ public class User {
     @ApiModelProperty(hidden = true)
     private int id;
 
-    @Column(name="email")
+    @Column(name="email", unique = true)
     @Email
     @NotBlank
     @NotNull
