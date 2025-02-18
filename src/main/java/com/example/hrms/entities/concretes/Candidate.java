@@ -21,17 +21,14 @@ import java.util.Date;
 
 public class Candidate extends User{
     @NotNull
-    @NotBlank
     @Column(name="first_name")
     private String firstName;
 
     @NotNull
-    @NotBlank
     @Column(name = "last_name")
     private String lastName;
 
     @NotNull
-    @NotBlank
     @Pattern(regexp = "^\\d{11}$")
     @Column(name = "identity_number")
     private String identityNumber;
